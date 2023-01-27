@@ -1,4 +1,4 @@
-import { Box, Flex, Icon } from "@chakra-ui/react";
+import { Box, Flex} from "@chakra-ui/react";
 import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { DiVisualstudio, DiReact, DiGit } from "react-icons/di";
@@ -10,7 +10,7 @@ import { SiPostgresql } from "react-icons/si";
 
 
 function Background () {
-  const image = [1,2,3,4,5,6,7] 
+  const image = [1,2,3,4,5,6,7,8] 
   return (
     <>
     { 
