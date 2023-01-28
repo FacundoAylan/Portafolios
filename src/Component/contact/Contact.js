@@ -114,7 +114,7 @@ function Contact() {
 
       <Box>
         <HStack
-          mt={{ base: 5, md: 1, lg: 7 }}
+          mt={{ base: 1, md: 1, lg: 7 }}
           spacing={5}
           px={{ base: 1, md: 1, lg: 5 }}
           alignItems="flex-start"
