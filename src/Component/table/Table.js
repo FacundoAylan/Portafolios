@@ -38,12 +38,12 @@ function Table() {
           </Center>
         </TabPanel>
         <TabPanel w='100%'>
-          <Box h="70vh" overflow="scroll">
+          <Box h="70vh" >
             <Proyect />
           </Box>
         </TabPanel>
         <TabPanel w='100%' p={0}>
-          <Box overflow="scroll">
+          <Box >
             <Contact />
           </Box>
         </TabPanel>

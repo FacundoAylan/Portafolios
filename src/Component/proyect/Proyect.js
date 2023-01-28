@@ -6,6 +6,7 @@ function Proyect() {
     <Flex
       h="100%"
       flexDirection='column'
+      overflow='scroll'
     >
       <Card
         direction={{ base: "column", md:'column', lg: 'row' }}
