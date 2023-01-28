@@ -6,7 +6,6 @@ function Proyect() {
     <Flex
       h="100%"
       flexDirection='column'
-      overflow='scroll'
     >
       <Card
         direction={{ base: "column", md:'column', lg: 'row' }}
@@ -36,7 +35,7 @@ function Proyect() {
             </Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{base:'5%', md:'35%', lg:'28%'}}>
+            <Box ml={{base:'12%', md:'35%', lg:'28%'}}>
               <Button
                 bg="green"
                 color="white"
@@ -97,7 +96,7 @@ function Proyect() {
             <Text py='2'>Ecommerce donde vas a poder comprar tus cursos de programacion.</Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{base:'5%', md:'35%', lg:'28%'}}>
+            <Box ml={{base:'12%', md:'35%', lg:'28%'}}>
               <Button
                 bg="green"
                 color="white"
@@ -159,7 +158,7 @@ function Proyect() {
             <Text py='2'>App donde vas a poder buscar informacion de tus videojuegos favoritos.</Text>
           </CardBody>
           <CardFooter>
-          <Box ml={{base:'5%', md:'35%', lg:'28%'}}>
+          <Box ml={{base:'12%', md:'35%', lg:'28%'}}>
               <Button
                 bg="green"
                 color="white"

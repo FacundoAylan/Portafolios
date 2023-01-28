@@ -17,7 +17,7 @@ function Table() {
           Contact
         </Tab>
       </TabList>
-      <TabPanels w='100%'>
+      <TabPanels w='100%' overflow='scroll'>
         <TabPanel w='100%'>
           <Center
             fontSize={{ base: 25, md: 25, lg: 36 }}
