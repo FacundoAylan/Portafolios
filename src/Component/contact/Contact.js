@@ -25,6 +25,8 @@ function Contact() {
       borderRadius="lg"
       w="98%"
       m={{ base: "1%", md: "", lg: 2 }}
+      overflow='auto'
+      maxH={{ base: "65vh", md: "30vh", lg: '70vh' }}
     >
       <Center>
         <Heading>Contact us</Heading>
@@ -112,7 +114,7 @@ function Contact() {
 
       <Box>
         <HStack
-          mt={{ base: 5, md: 1, lg: 10 }}
+          mt={{ base: 5, md: 1, lg: 7 }}
           spacing={5}
           px={{ base: 1, md: 1, lg: 5 }}
           alignItems="flex-start"

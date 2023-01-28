@@ -4,8 +4,9 @@ import React from "react";
 function Proyect() {
   return (
     <Flex
-      h="100%"
+      maxH={{ base: "61vh", md: "30vh", lg: '70vh' }}
       flexDirection='column'
+      overflow='auto'
     >
       <Card
         direction={{ base: "column", md:'column', lg: 'row' }}

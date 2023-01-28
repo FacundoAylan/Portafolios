@@ -15,7 +15,6 @@ function App() {
         ml={{base: '10%', md: '10%', lg: '24%'}}
         borderRadius={12}
         bg='white'
-        overflow='auto'
       >
         <Table/>
       </Box>

@@ -17,7 +17,7 @@ function Table() {
           Contact
         </Tab>
       </TabList>
-      <TabPanels w='100%' overflow='scroll'>
+      <TabPanels w='100%' >
         <TabPanel w='100%'>
           <Center
             fontSize={{ base: 25, md: 25, lg: 36 }}
@@ -38,14 +38,10 @@ function Table() {
           </Center>
         </TabPanel>
         <TabPanel w='100%'>
-          <Box h="70vh" >
             <Proyect />
-          </Box>
         </TabPanel>
         <TabPanel w='100%' p={0}>
-          <Box >
             <Contact />
-          </Box>
         </TabPanel>
       </TabPanels>
     </Tabs>
