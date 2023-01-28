@@ -26,13 +26,13 @@ function Contact() {
       w="98%"
       m={{ base: "1%", md: "", lg: 2 }}
       overflow='auto'
-      maxH={{ base: "65vh", md: "30vh", lg: '70vh' }}
+      maxH={{ base: "65vh", md: "30vh", lg: '72vh' }}
     >
       <Center>
         <Heading>Contact us</Heading>
       </Center>
 
-      <Center mt={{ base: 5, md: 1, lg: 5 }}>
+      <Center mt={{ base: 5, md: 1, lg: 8 }}>
         <Box
           color="white"
           borderRadius="lg"

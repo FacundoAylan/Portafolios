@@ -1,4 +1,4 @@
-import { Box, Center, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
+import { Center, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import React from "react";
 import Proyect from "../proyect/Proyect";
 import Contact from "../contact/Contact";
