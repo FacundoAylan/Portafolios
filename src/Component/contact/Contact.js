@@ -20,7 +20,7 @@ import React from "react";
 function Contact() {
   return (
     <Box
-      bg="#333332"
+      bg="none"
       color="white"
       borderRadius="lg"
       w="98%"
