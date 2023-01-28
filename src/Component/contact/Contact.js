@@ -57,6 +57,7 @@ function Contact() {
                     name="name"
                     required
                     bg="white"
+                    color='black'
                   />
                 </InputGroup>
               </FormControl>
@@ -73,6 +74,7 @@ function Contact() {
                     required
                     size="md"
                     bg="white"
+                    color='black'
                   />
                 </InputGroup>
               </FormControl>
@@ -88,6 +90,7 @@ function Contact() {
                   name="Comments"
                   required
                   bg="white"
+                  color='black'
                 />
               </FormControl>
               <FormControl id="name" float="right" mt="3%">
@@ -104,7 +107,7 @@ function Contact() {
               <Input
                 type="hidden"
                 name="_next"
-                value="http://localhost:3001/"
+                value="https://portafolios-rose.vercel.app/"
               />
               <Input type="hidden" name="_captcha" value="false" />
             </form>
