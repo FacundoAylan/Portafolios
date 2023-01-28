@@ -20,11 +20,11 @@ import React from "react";
 function Contact() {
   return (
     <Box
-      bg="#111"
+      bg="#333332"
       color="white"
       borderRadius="lg"
       w="98%"
-      m={{ base: "1%", md: "", lg: 2 }}
+      m={{ base: "1%", md: "", lg: 3 }}
       overflow='auto'
       maxH={{ base: "65vh", md: "30vh", lg: '72vh' }}
     >
@@ -32,7 +32,7 @@ function Contact() {
         <Heading>Contact us</Heading>
       </Center>
 
-      <Center mt={{ base: 5, md: 1, lg: 8 }}>
+      <Center mt={{ base: 5, md: 1, lg: 5 }}>
         <Box
           color="white"
           borderRadius="lg"
@@ -100,6 +100,7 @@ function Contact() {
                   color="white"
                   width="100%"
                   type="submit"
+                  _hover={{bg:'green'}}
                 >
                   Send
                 </Button>

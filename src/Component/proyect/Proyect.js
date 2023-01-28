@@ -10,10 +10,12 @@ function Proyect() {
     >
       <Card
         direction={{ base: "column", md:'column', lg: 'row' }}
-        bg="#111"
         color='white'
         borderRadius={12}
         m={{ base: 1, md: 1, lg: 5 }}
+        border='2px'
+        borderColor='green'
+        bg='none'
       >
         <Image
           objectFit="cover"
@@ -73,10 +75,12 @@ function Proyect() {
       <Card
         direction={{ base: "column", md:'column', lg: 'row' }}
         mt={5}
-        bg="#111"
         color='white'
         borderRadius={12}
         m={{ base: 1, md: 1, lg: 5 }}
+        border='2px'
+        borderColor='green'
+        bg='none'
       >
         <Image
           objectFit='cover'
@@ -134,10 +138,12 @@ function Proyect() {
       <Card
         direction={{ base: "column", md:'column', lg: 'row' }}
         mt={5}
-        bg="#111"
         color='white'
         borderRadius={12}
         m={{ base: 1, md: 1, lg: 5 }}
+        border='2px'
+        borderColor='green'
+        bg='none'
       >
         <Image
           objectFit='cover'

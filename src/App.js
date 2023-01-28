@@ -14,7 +14,9 @@ function App() {
         mt={{base: '2px', md: '2px', lg: '3%'}}
         ml={{base: '10%', md: '10%', lg: '24%'}}
         borderRadius={12}
-        bg='white'
+        bg='rgba(73, 72, 72, 0.644)'
+        border='2px'
+        borderColor='green'
       >
         <Table/>
       </Box>
