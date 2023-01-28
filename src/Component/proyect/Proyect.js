@@ -17,9 +17,12 @@ function Proyect() {
       >
         <Image
           objectFit="cover"
-          maxW={{ base: '100%', sm: '200px' }}
+          maxW={{ base: '100%', md:'100%', lg: '200px' }}
           src="https://i.ibb.co/BT7F5ZZ/weather.png"
           alt="Weather"
+          borderTopLeftRadius={{ base: 12, md:12, lg: 12 }}
+          borderTopRightRadius={{ base: 12, md:12, lg: 0 }}
+          borderBottomLeftRadius={{ base: 0, md:0, lg: 12 }}
         />
         <Stack>
           <CardBody>
@@ -33,9 +36,9 @@ function Proyect() {
             </Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{base:'3%', md:'3%', lg:'28%'}}>
+            <Box ml={{base:'5%', md:'35%', lg:'28%'}}>
               <Button
-                bg="rgba(0,0,0,0.5)"
+                bg="green"
                 color="white"
                 _hover={{ bg: "green" }}
                 textDecoration="none"
@@ -54,7 +57,7 @@ function Proyect() {
                 rel="noreferrer"
               >
                 <Button
-                  bg="rgba(0,0,0,0.5)"
+                  bg="green"
                   color="white"
                   _hover={{ bg: "green" }}
                   ml={2}
@@ -77,9 +80,12 @@ function Proyect() {
       >
         <Image
           objectFit='cover'
-          maxW={{ base: '100%', sm: '200px' }}
+          maxW={{ base: '100%', md:'100%', lg: '200px' }}
           src="https://i.ibb.co/DbPQfq0/Cursort.png"
-          alt="Weather"
+          alt="Cursort"
+          borderTopLeftRadius={{ base: 12, md:12, lg: 12 }}
+          borderTopRightRadius={{ base: 12, md:12, lg: 0 }}
+          borderBottomLeftRadius={{ base: 0, md:0, lg: 12 }}
         />
         <Stack>
           <CardBody>
@@ -91,9 +97,9 @@ function Proyect() {
             <Text py='2'>Ecommerce donde vas a poder comprar tus cursos de programacion.</Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{base:'3%', md:'3%', lg:'28%'}}>
+            <Box ml={{base:'5%', md:'35%', lg:'28%'}}>
               <Button
-                bg="rgba(0,0,0,0.5)"
+                bg="green"
                 color="white"
                 _hover={{ bg: "green" }}
                 textDecoration="none"
@@ -112,7 +118,7 @@ function Proyect() {
                 rel="noreferrer"
               >
                 <Button
-                  bg="rgba(0,0,0,0.5)"
+                  bg="green"
                   color="white"
                   _hover={{ bg: "green" }}
                   ml={2}
@@ -135,9 +141,13 @@ function Proyect() {
       >
         <Image
           objectFit='cover'
-          maxW={{ base: '100%', sm: '200px' }}
+          maxW={{ base: '100%', md:'100%', lg: '200px' }}
           src="https://i.ibb.co/BT7F5ZZ/weather.png"
           alt="Weather"
+          borderTopLeftRadius={{ base: 12, md:12, lg: 12 }}
+          borderTopRightRadius={{ base: 12, md:12, lg: 0 }}
+          borderBottomLeftRadius={{ base: 0, md:0, lg: 12 }}
+
         />
         <Stack>
           <CardBody>
@@ -149,9 +159,9 @@ function Proyect() {
             <Text py='2'>App donde vas a poder buscar informacion de tus videojuegos favoritos.</Text>
           </CardBody>
           <CardFooter>
-          <Box ml={{base:'3%', md:'3%', lg:'28%'}}>
+          <Box ml={{base:'5%', md:'35%', lg:'28%'}}>
               <Button
-                bg="rgba(0,0,0,0.5)"
+                bg="green"
                 color="white"
                 _hover={{ bg: "green" }}
                 textDecoration="none"
@@ -170,7 +180,7 @@ function Proyect() {
                 rel="noreferrer"
               >
                 <Button
-                  bg="rgba(0,0,0,0.5)"
+                  bg="green"
                   color="white"
                   _hover={{ bg: "green" }}
                   ml={2}

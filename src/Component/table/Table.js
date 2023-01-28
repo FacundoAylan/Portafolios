@@ -1,7 +1,7 @@
-import { Box, Center, Tab, TabList, TabPanel, TabPanels, Tabs, Text } from "@chakra-ui/react";
+import { Box, Center, Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import React from "react";
 import Proyect from "../proyect/Proyect";
-import Contact from "../contact/Contac";
+import Contact from "../contact/Contact";
 import Typewriter from "typewriter-effect";
 
 function Table() {
@@ -17,8 +17,8 @@ function Table() {
           Contact
         </Tab>
       </TabList>
-      <TabPanels>
-        <TabPanel>
+      <TabPanels w='100%'>
+        <TabPanel w='100%'>
           <Center
             fontSize={{ base: 25, md: 25, lg: 36 }}
             fontWeight="bold"
@@ -37,13 +37,13 @@ function Table() {
             />
           </Center>
         </TabPanel>
-        <TabPanel>
+        <TabPanel w='100%'>
           <Box h="70vh">
             <Proyect />
           </Box>
         </TabPanel>
-        <TabPanel>
-          <Box h="70vh">
+        <TabPanel w='100%' p={0}>
+          <Box>
             <Contact />
           </Box>
         </TabPanel>
