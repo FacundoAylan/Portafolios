@@ -21,7 +21,7 @@ function Contact() {
   return (
     <Box
       bg="none"
-      color="white"
+      color="black"
       borderRadius="lg"
       w="98%"
       m={{ base: "1%", md: "", lg: 3 }}
@@ -45,7 +45,7 @@ function Contact() {
               method="POST"
             >
               <FormControl id="name">
-                <Center>Your name</Center>
+                <Center color='black'>Your name</Center>
                 <InputGroup borderColor="#E0E1E7">
                   <InputLeftElement
                     pointerEvents="none"
@@ -62,7 +62,7 @@ function Contact() {
                 </InputGroup>
               </FormControl>
               <FormControl id="name">
-                <Center>Mail</Center>
+                <Center color='black'>Mail</Center>
                 <InputGroup borderColor="#E0E1E7">
                   <InputLeftElement
                     pointerEvents="none"
@@ -79,7 +79,7 @@ function Contact() {
                 </InputGroup>
               </FormControl>
               <FormControl id="name">
-                <Center>Message</Center>
+                <Center color='black'>Message</Center>
                 <Textarea
                   borderColor="gray.300"
                   _hover={{
