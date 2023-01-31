@@ -1,5 +1,6 @@
-import { Box, Button, Card, CardBody, CardFooter, Center, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import { Card, CardBody, CardFooter, Center, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
+import IconsProyect from "./icons";
 
 function Proyect() {
   return (
@@ -34,36 +35,7 @@ function Proyect() {
             <Text>App donde podras consulta el clima de tu pais o cuidad.</Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{ base: "12%", md: "35%", lg: "28%" }}>
-              <Button
-                bg="green"
-                color="white"
-                _hover={{ bg: "green" }}
-                textDecoration="none"
-              >
-                <a
-                  href="https://cursort.onrender.com/#/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Link
-                </a>
-              </Button>
-              <a
-                href="https://cursort.onrender.com/#/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button
-                  bg="green"
-                  color="white"
-                  _hover={{ bg: "green" }}
-                  ml={2}
-                >
-                  Git-Hub
-                </Button>
-              </a>
-            </Box>
+            <IconsProyect github='' web=''/>
           </CardFooter>
         </Stack>
       </Card>
@@ -97,36 +69,7 @@ function Proyect() {
             </Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{ base: "12%", md: "35%", lg: "28%" }}>
-              <Button
-                bg="green"
-                color="white"
-                _hover={{ bg: "green" }}
-                textDecoration="none"
-              >
-                <a
-                  href="https://cursort.onrender.com/#/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Link
-                </a>
-              </Button>
-              <a
-                href="https://cursort.onrender.com/#/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button
-                  bg="green"
-                  color="white"
-                  _hover={{ bg: "green" }}
-                  ml={2}
-                >
-                  Git-Hub
-                </Button>
-              </a>
-            </Box>
+            <IconsProyect github='' web=''/>
           </CardFooter>
         </Stack>
       </Card>
@@ -161,36 +104,7 @@ function Proyect() {
             </Text>
           </CardBody>
           <CardFooter>
-            <Box ml={{ base: "12%", md: "35%", lg: "28%" }}>
-              <Button
-                bg="green"
-                color="white"
-                _hover={{ bg: "green" }}
-                textDecoration="none"
-              >
-                <a
-                  href="https://cursort.onrender.com/#/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Link
-                </a>
-              </Button>
-              <a
-                href="https://cursort.onrender.com/#/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button
-                  bg="green"
-                  color="white"
-                  _hover={{ bg: "green" }}
-                  ml={2}
-                >
-                  Git-Hub
-                </Button>
-              </a>
-            </Box>
+            <IconsProyect github='' web=''/>
           </CardFooter>
         </Stack>
       </Card>

@@ -25,7 +25,7 @@ function Background () {
         >
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <VscServer />
           </Box>
@@ -34,7 +34,7 @@ function Background () {
           </Box>
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <SiPostgresql />
           </Box>
@@ -46,7 +46,7 @@ function Background () {
           </Box>
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <DiVisualstudio />
           </Box>
@@ -58,7 +58,7 @@ function Background () {
           </Box>
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <FiLinkedin />
           </Box>
@@ -70,7 +70,7 @@ function Background () {
           </Box>
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <FaGit />
           </Box>
@@ -82,7 +82,7 @@ function Background () {
           </Box>
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <FaNpm />
           </Box>
@@ -94,7 +94,7 @@ function Background () {
           </Box>
           <Box
             transform="rotate(-30deg)"
-            _hover={{ color: "green" }}
+            _hover={{ bgGradient:'linear(to-l, #7928CA, #FF0080)' }}
           >
             <FaNode />
           </Box>
