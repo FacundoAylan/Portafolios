@@ -31,7 +31,7 @@ function Table() {
           Contact
         </Tab>
       </TabList>
-      <TabPanels w="100%"  h='91%'>
+      <TabPanels w="100%"  h='94%'>
         <TabPanel w="100%">
           <Center
             fontSize={{ base: 25, md: 25, lg: '6xl' }}

@@ -22,7 +22,7 @@ function Contact() {
   return (
     <Flex
       flexDirection="column"
-      h='96%'
+      h='100%'
       overflow='scroll'
       bg="none"
       color="black"
@@ -33,7 +33,7 @@ function Contact() {
         <Heading>Contact us</Heading>
       </Center>
 
-      <Center mt={{ base: 1, md: 0, lg: 5 }}>
+      <Center mt={{ base: 1, md: 0, lg: 2 }}>
         <Box
           color="white"
           borderRadius="lg"
