@@ -9,7 +9,7 @@ import { BiWorld } from 'react-icons/bi'
 
 function IconsProyect ({ github, web }) {
   return (
-    <Box ml={{ base: "12%", md: "35%", lg: "28%" }} >
+    <Box ml={{ base: "25%", md: "41%", lg: "28%" }} >
     <HStack
       mt={{ base: 1, md: 1, lg: 0 }}
       spacing={4}

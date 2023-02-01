@@ -11,6 +11,7 @@ import {
   FormControl,
   InputGroup,
   InputLeftElement,
+  Flex,
 } from "@chakra-ui/react";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsGithub, BsLinkedin, BsPerson } from "react-icons/bs";
@@ -19,20 +20,20 @@ import React from "react";
 
 function Contact() {
   return (
-    <Box
+    <Flex
+      flexDirection="column"
+      h='96%'
+      overflow='scroll'
       bg="none"
       color="black"
       borderRadius="lg"
       w="98%"
-      m={{ base: "1%", md: "", lg: 3 }}
-      overflow='auto'
-      maxH={{ base: "65vh", md: "30vh", lg: '72vh' }}
     >
       <Center>
         <Heading>Contact us</Heading>
       </Center>
 
-      <Center mt={{ base: 5, md: 1, lg: 5 }}>
+      <Center mt={{ base: 1, md: 0, lg: 5 }}>
         <Box
           color="white"
           borderRadius="lg"
@@ -149,7 +150,7 @@ function Contact() {
           </a>
         </HStack>
       </Box>
-    </Box>
+    </Flex>
   );
 }
 

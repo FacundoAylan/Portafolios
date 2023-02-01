@@ -5,9 +5,9 @@ import IconsProyect from "./icons";
 function Proyect() {
   return (
     <Flex
-      maxH={{ base: "60vh", md: "30vh", lg: "70vh" }}
       flexDirection="column"
-      overflow="auto"
+      h='96%'
+      overflow='scroll'
     >
       <Card
         direction={{ base: "column", md: "column", lg: "row" }}
@@ -17,6 +17,7 @@ function Proyect() {
         border="2px"
         borderColor="green"
         bg="white"
+        h='100%'
       >
         <Image
           objectFit="cover"
@@ -34,7 +35,7 @@ function Proyect() {
             </Heading>
             <Text>App donde podras consulta el clima de tu pais o cuidad.</Text>
           </CardBody>
-          <CardFooter>
+          <CardFooter p={1} >
             <IconsProyect github='' web=''/>
           </CardFooter>
         </Stack>
@@ -68,7 +69,7 @@ function Proyect() {
               Ecommerce donde vas a poder comprar tus cursos de programacion.
             </Text>
           </CardBody>
-          <CardFooter>
+          <CardFooter p={1}>
             <IconsProyect github='' web=''/>
           </CardFooter>
         </Stack>
@@ -103,7 +104,7 @@ function Proyect() {
               favoritos.
             </Text>
           </CardBody>
-          <CardFooter>
+          <CardFooter p={1}>
             <IconsProyect github='' web=''/>
           </CardFooter>
         </Stack>

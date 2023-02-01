@@ -13,7 +13,7 @@ function App(ButtonProps) {
       h="100vh"
       justifyContent="center"
       alignItems="center"
-      pt={8}
+      pt={2}
       m={0}
       position="relative"
     >
@@ -23,15 +23,21 @@ function App(ButtonProps) {
         _focus={{ boxShadow: "none" }}
         w="fit-content"
         {...ButtonProps}
+        position='absolute'
+        zIndex={2}
+        border='2px'
+        borderColor='green'
+        ml='1%'
+        bg='green'
       >
-        {colorMode === "light" ? <BsMoonStarsFill /> : <BsSun />}
+        {colorMode === "light" ? <BsMoonStarsFill  /> : <BsSun />}
       </Button>
       <Box
         position="absolute"
         zIndex={2}
-        h={{ base: "70%", md: "90%", lg: "80%" }}
+        h={{ base: "62%", md: "90%", lg: "80%" }}
         w={{ base: "80%", md: "80%", lg: "50%" }}
-        mt={{ base: "2px", md: "2px", lg: "3%" }}
+        mt={{ base: "45px", md: "2px", lg: "3%" }}
         ml={{ base: "10%", md: "10%", lg: "24%" }}
         borderRadius={12}
         bgGradient="linear(to-r, gray.300, yellow.400, pink.200)"
