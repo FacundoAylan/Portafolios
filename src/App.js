@@ -1,12 +1,13 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Center, Flex } from "@chakra-ui/react";
 import React from "react";
 import Background from './Component/background/Background'
-import Table from "./Component/table/Table";
-import { Button, useColorMode } from '@chakra-ui/react';
-import { BsSun, BsMoonStarsFill } from 'react-icons/bs';
+import WithSubnavigation from './Component/navbar/navbar'
+import About from './Component/about/About'
+import Cards from './Component/card/card'
+import Contact from "./Component/contact/Contact";
+import Home from "./Component/home/home";
 
-function App(ButtonProps) {
-  const { colorMode, toggleColorMode } = useColorMode();
+function App() {
   return (
     <Box
       w="100%"
@@ -17,36 +18,59 @@ function App(ButtonProps) {
       m={0}
       position="relative"
     >
-      <Button
-        aria-label="Toggle Color Mode"
-        onClick={toggleColorMode}
-        _focus={{ boxShadow: "none" }}
-        w="fit-content"
-        {...ButtonProps}
-        position='absolute'
-        zIndex={2}
-        border='2px'
-        borderColor='green'
-        ml='1%'
-        bg='green'
-      >
-        {colorMode === "light" ? <BsMoonStarsFill  /> : <BsSun />}
-      </Button>
-      <Box
-        position="absolute"
-        zIndex={2}
-        h={{ base: "70%", md: "90%", lg: "80%" }}
-        w={{ base: "80%", md: "80%", lg: "50%" }}
-        mt={{ base: "45px", md: "2px", lg: "3%" }}
-        ml={{ base: "10%", md: "10%", lg: "24%" }}
-        borderRadius={12}
-        bgGradient="linear(to-r, gray.300, yellow.400, pink.200)"
-        border="2px"
-        borderColor="green"
-      >
-        <Table />
+      <WithSubnavigation/>
+      <Box position='absolute' zIndex={2}>
+        <scroll-container>
+          <scroll-page id='Home'>
+            <Home/>
+          </scroll-page>
+          
+          <scoll-page id='About me'>
+            <About/>
+          </scoll-page>
+
+          <scroll-page id='Proyect'>
+            <Center fontSize='4xl'>Proyect</Center>
+            <Flex  flexWrap='wrap' justifyContent='center' gap='10px'>
+              <Cards
+                image='https://i.ibb.co/BT7F5ZZ/weather.png' 
+                name='Weather' 
+                description='App donde podras consulta el clima de tu pais o cuidad.' 
+                github='' 
+                web=''
+              />
+              <Cards
+                image='https://i.ibb.co/DbPQfq0/Cursort.png' 
+                name='Cursort' 
+                description='Ecommerce donde vas a poder comprar tus cursos de programacion.' 
+                github='' 
+                web=''
+              />
+              <Cards
+                image='https://i.ibb.co/BT7F5ZZ/weather.png' 
+                name='Videogames' 
+                description='App donde vas a poder buscar informacion de tus videojuegos
+                favoritos.' 
+                github='' 
+                web=''
+              />
+              <Cards
+                image='https://i.ibb.co/BT7F5ZZ/weather.png' 
+                name='Videogames' 
+                description='App donde vas a poder buscar informacion de tus videojuegos
+                favoritos.' 
+                github='' 
+                web=''
+              />
+            </Flex>
+          </scroll-page>
+
+          <scroll-page id='Contact'>
+            <Contact />
+          </scroll-page>
+        </scroll-container>
       </Box>
-      <Background />
+      <Background/>
     </Box>
   );
 }
