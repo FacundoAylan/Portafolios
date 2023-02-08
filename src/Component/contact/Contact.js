@@ -56,12 +56,13 @@ export default function Contact() {
         <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 4 }} >
             <Heading
+              pt={{base:'40px'}}
               ml={{base:'', md:'140px'}}
               fontSize={{
                 base: '4xl',
                 md: '5xl',
               }}>
-              Contact us
+              Contactame
             </Heading>
 
             <Stack
@@ -132,7 +133,7 @@ export default function Contact() {
                     method="POST"
                   >
                   <FormControl isRequired id="name">
-                    <Center>Your name</Center>
+                    <Center>Nombre</Center>
 
                     <InputGroup>
                       <InputLeftElement children={<BsPerson />} />
@@ -154,7 +155,7 @@ export default function Contact() {
                   </FormControl>
 
                   <FormControl isRequired>
-                    <Center>Message</Center>
+                    <Center>Mensaje</Center>
 
                     <Textarea
                       name="message"
@@ -172,7 +173,7 @@ export default function Contact() {
                         bg: 'blue.500',
                       }}
                       isFullWidth>
-                      Send Message
+                      Enviar mensaje
                     </Button>
                   </Center>
                   </form>

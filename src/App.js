@@ -14,23 +14,25 @@ function App() {
       h="100vh"
       justifyContent="center"
       alignItems="center"
-      pt={2}
+      pt={0}
       m={0}
       position="relative"
     >
-      <WithSubnavigation/>
-      <Box position='absolute' zIndex={2}>
+      <Box position='fixed' w='100%' m={0} zIndex={2}>
+        <WithSubnavigation/>
+      </Box>
+      <Box position='absolute' zIndex={1}>
         <scroll-container>
-          <scroll-page id='Home'>
+          <scroll-page id='Inicio'>
             <Home/>
           </scroll-page>
           
-          <scoll-page id='About me'>
+          <scoll-page id='Sobre mi'>
             <About/>
           </scoll-page>
 
-          <scroll-page id='Proyect'>
-            <Center fontSize='4xl'>Proyect</Center>
+          <scroll-page id='Proyectos' >
+            <Center fontSize='4xl' pt={{base:'65px', md:'60px'}}>Proyect</Center>
             <Flex  flexWrap='wrap' justifyContent='center' gap='10px'>
               <Cards
                 image='https://i.ibb.co/BT7F5ZZ/weather.png' 
@@ -65,7 +67,7 @@ function App() {
             </Flex>
           </scroll-page>
 
-          <scroll-page id='Contact'>
+          <scroll-page id='Contacto'>
             <Contact />
           </scroll-page>
         </scroll-container>

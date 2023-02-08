@@ -13,7 +13,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/react';
@@ -35,12 +34,11 @@ export default function WithSubnavigation(ButtonProps) {
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        w='100%'
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -57,14 +55,6 @@ export default function WithSubnavigation(ButtonProps) {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
-
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -92,7 +82,7 @@ export default function WithSubnavigation(ButtonProps) {
         </Stack>
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
+      <Collapse in={isOpen} animateOpacity >
         <MobileNav />
       </Collapse>
     </Box>
@@ -105,7 +95,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
-    <Stack direction={'row'} spacing={4}>
+    <Stack direction={'row'} spacing={4} >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -149,13 +139,13 @@ const DesktopNav = () => {
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
     <Link
-      href={href}
+      href={`#${label}`}
       role={'group'}
       display={'block'}
       p={2}
       rounded={'md'}
       _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
-      <Stack direction={'row'} align={'center'}>
+      <Stack direction={'row'} align={'center'} >
         <Box>
           <Text
             transition={'all .3s ease'}
@@ -185,7 +175,11 @@ const MobileNav = () => {
     <Stack
       bg={useColorModeValue('white', 'gray.800')}
       p={4}
-      display={{ md: 'none' }}>
+      display={{ md: 'none' }}
+      // position='fixed'
+      // zIndex={20}
+      // h='35vh'
+      >
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -197,11 +191,14 @@ const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
+    <Stack 
+      spacing={4}
+      onClick={children && onToggle}
+      >
       <Flex
         py={2}
         as={Link}
-        href={href ?? '#'}
+        href={`#${label}`}
         justify={'space-between'}
         align={'center'}
         _hover={{
@@ -245,19 +242,19 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: 'Home',
+    label: 'Inicio',
 
   },
   {
-    label: 'About me',
+    label: 'Sobre mi',
 
   },
   {
-    label: 'Proyect',
+    label: 'Proyectos',
     href: '#',
   },
   {
-    label: 'Contact',
+    label: 'Contacto',
     href: '#',
   },
 ];

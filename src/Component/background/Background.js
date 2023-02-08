@@ -10,7 +10,7 @@ import { SiPostgresql } from "react-icons/si";
 
 
 function Background () {
-  const image = [1,2,3,4,5,6,7,8] 
+  const image = [...Array(30).keys()] 
   return (
     <>
     { 
