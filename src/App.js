@@ -38,30 +38,30 @@ function App() {
                 image='https://i.ibb.co/BT7F5ZZ/weather.png' 
                 name='Weather' 
                 description='App donde podras consulta el clima de tu pais o cuidad.' 
-                github='' 
-                web=''
+                github='https://github.com/FacundoAylan/weather' 
+                web='https://weather-eight-sigma.vercel.app/'
               />
               <Cards
                 image='https://i.ibb.co/DbPQfq0/Cursort.png' 
                 name='Cursort' 
                 description='Ecommerce donde vas a poder comprar tus cursos de programacion.' 
-                github='' 
-                web=''
+                github='https://github.com/FacundoAylan/CurSort' 
+                web='https://cursort.onrender.com/#/'
               />
               <Cards
-                image='https://i.ibb.co/BT7F5ZZ/weather.png' 
+                image='https://i.ibb.co/NmTZDkk/videogmames.png' 
                 name='Videogames' 
                 description='App donde vas a poder buscar informacion de tus videojuegos
                 favoritos.' 
-                github='' 
-                web=''
+                github='https://github.com/FacundoAylan/VideoGamerPi' 
+                web='https://video-gamer-pi.vercel.app/'
               />
               <Cards
                 image='https://i.ibb.co/BT7F5ZZ/weather.png' 
-                name='Videogames' 
-                description='App donde vas a poder buscar informacion de tus videojuegos
+                name='Country' 
+                description='App donde vas a poder buscar informacion de los paises
                 favoritos.' 
-                github='' 
+                github='https://github.com/FacundoAylan/HenryPI' 
                 web=''
               />
             </Flex>

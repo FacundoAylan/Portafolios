@@ -21,18 +21,13 @@ function AvatarAbout() {
         </Text>
       </Box>
       <Center>Skills</Center> 
-      <Center>Frontend</Center>  
-      <Flex flexWrap='wrap' justifyContent='center'> 
-        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" h="50" />
-        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" h="50" /> 
-        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" h="50" /> 
-        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" h="50" />  
-        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" alt="Redux" h="50" /> 
-        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/chakraui.png" alt="Chakra UI" h="50" />
-      </Flex>
-
-      <Center>Backend</Center>   
-      <Flex flexWrap='wrap' justifyContent='center'> 
+      <Flex flexWrap='wrap' justifyContent='center' bg='green'> 
+        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" h="58" />
+        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" h="58"  /> 
+        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" h="58" /> 
+        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" h="58" />  
+        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" alt="Redux" h="58" /> 
+        <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/chakraui.png" alt="Chakra UI" h="58" />
         <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" h="20" />  
         <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" h="20" />  
         <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" h="20" /> 

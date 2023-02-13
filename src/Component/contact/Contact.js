@@ -41,41 +41,47 @@ export default function Contact() {
 
   return (
     <Flex
-      bg={useColorModeValue('gray.100', 'gray.900')}
+      bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"
       css={{
         backgroundImage: useColorModeValue(CONFETTI_LIGHT, CONFETTI_DARK),
-        backgroundAttachment: 'fixed',
+        backgroundAttachment: "fixed",
       }}
-      id="contact">
+      id="contact"
+    >
       <Box
         borderRadius="lg"
         m={{ base: 5, md: 16, lg: 10 }}
-        p={{ base: 5, lg: 10 }}>
+        p={{ base: 5, lg: 10 }}
+      >
         <Box>
-          <VStack spacing={{ base: 4, md: 8, lg: 4 }} >
+          <VStack spacing={{ base: 4, md: 8, lg: 4 }}>
             <Heading
-              pt={{base:'40px'}}
-              ml={{base:'', md:'140px'}}
+              pt={{ base: "40px" }}
+              ml={{ base: "", md: "140px" }}
               fontSize={{
-                base: '4xl',
-                md: '5xl',
-              }}>
+                base: "4xl",
+                md: "5xl",
+              }}
+            >
               Contactame
             </Heading>
 
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
-              direction={{ base: 'column', md: 'row' }}>
+              direction={{ base: "column", md: "row" }}
+            >
               <Stack
                 align="center"
                 justify="space-around"
-                direction={{ base: 'row', md: 'column' }}>
+                direction={{ base: "row", md: "column" }}
+              >
                 <Tooltip
-                  label={hasCopied ? 'Email Copied!' : 'Copy Email'}
+                  label={hasCopied ? "Email Copied!" : "Copy Email"}
                   closeOnClick={false}
-                  hasArrow>
+                  hasArrow
+                >
                   <IconButton
                     aria-label="email"
                     variant="ghost"
@@ -83,15 +89,19 @@ export default function Contact() {
                     fontSize="3xl"
                     icon={<MdEmail />}
                     _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
+                      bg: "blue.500",
+                      color: useColorModeValue("white", "gray.700"),
                     }}
                     onClick={onCopy}
                     isRound
                   />
                 </Tooltip>
 
-                <Link href="https://github.com/FacundoAylan" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://github.com/FacundoAylan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <IconButton
                     aria-label="github"
                     variant="ghost"
@@ -99,22 +109,26 @@ export default function Contact() {
                     fontSize="3xl"
                     icon={<BsGithub />}
                     _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
+                      bg: "blue.500",
+                      color: useColorModeValue("white", "gray.700"),
                     }}
                     isRound
                   />
                 </Link>
 
-                <Link href="https://www.linkedin.com/in/facundo-aylan-582b52257/" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://www.linkedin.com/in/facundo-aylan-582b52257/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <IconButton
                     aria-label="linkedin"
                     variant="ghost"
                     size="lg"
                     icon={<BsLinkedin size="28px" />}
                     _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
+                      bg: "blue.500",
+                      color: useColorModeValue("white", "gray.700"),
                     }}
                     isRound
                   />
@@ -122,60 +136,69 @@ export default function Contact() {
               </Stack>
 
               <Box
-                bg={useColorModeValue('white', 'gray.700')}
+                bg={useColorModeValue("white", "gray.700")}
                 borderRadius="lg"
                 p={8}
-                color={useColorModeValue('gray.700', 'whiteAlpha.900')}
-                shadow="base">
+                color={useColorModeValue("gray.700", "whiteAlpha.900")}
+                shadow="base"
+              >
                 <VStack spacing={5}>
                   <form
                     action="https://formsubmit.co/2375b55a786a8aa1e0447ba34487bc4b "
                     method="POST"
                   >
-                  <FormControl isRequired id="name">
-                    <Center>Nombre</Center>
+                    <FormControl isRequired id="name">
+                      <Center>Nombre</Center>
 
-                    <InputGroup>
-                      <InputLeftElement children={<BsPerson />} />
-                      <Input type="text" name="name" placeholder="Your Name" />
-                    </InputGroup>
-                  </FormControl>
+                      <InputGroup>
+                        <InputLeftElement children={<BsPerson />} />
+                        <Input
+                          type="text"
+                          name="name"
+                          placeholder="Tu nombre"
+                        />
+                      </InputGroup>
+                    </FormControl>
 
-                  <FormControl isRequired>
-                    <Center>Email</Center>
+                    <FormControl isRequired>
+                      <Center>Email</Center>
 
-                    <InputGroup>
-                      <InputLeftElement children={<MdOutlineEmail />} />
-                      <Input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
+                      <InputGroup>
+                        <InputLeftElement children={<MdOutlineEmail />} />
+                        <Input
+                          type="email"
+                          name="email"
+                          placeholder="Tu Email"
+                        />
+                      </InputGroup>
+                    </FormControl>
+
+                    <FormControl isRequired>
+                      <Center>Mensaje</Center>
+
+                      <Textarea
+                        name="message"
+                        placeholder="Your Message"
+                        rows={6}
+                        resize="none"
                       />
-                    </InputGroup>
-                  </FormControl>
-
-                  <FormControl isRequired>
-                    <Center>Mensaje</Center>
-
-                    <Textarea
-                      name="message"
-                      placeholder="Your Message"
-                      rows={6}
-                      resize="none"
-                    />
-                  </FormControl>
-                  <Center mt={2}>
-                    <Button
-                      colorScheme="blue"
-                      bg="blue.400"
-                      color="white"
-                      _hover={{
-                        bg: 'blue.500',
-                      }}
-                      isFullWidth>
-                      Enviar mensaje
-                    </Button>
-                  </Center>
+                    </FormControl>
+                    <Center mt={2}>
+                      <Button
+                        colorScheme="blue"
+                        bg="blue.400"
+                        color="white"
+                        _hover={{
+                          bg: "blue.500",
+                        }}
+                        isFullWidth
+                        type="submit"
+                      >
+                        Enviar mensaje
+                      </Button>
+                    </Center>
+                    <input type="hidden" name="_next" value="http://localhost:3000/#Proyectos"></input>
+                    <input type="hidden" name="_captcha" value="false"></input>
                   </form>
                 </VStack>
               </Box>

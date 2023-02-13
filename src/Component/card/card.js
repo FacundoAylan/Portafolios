@@ -56,7 +56,7 @@ export default function Cards({ image, name, description, github, web}) {
             justifyContent={"center"}
             alignItems={"center"}
           >
-            <a href={github}>
+            <a href={github}  target="_blank" rel="noreferrer">
               <IconButton
                 aria-label="github"
                 variant="ghost"
