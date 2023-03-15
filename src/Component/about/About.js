@@ -21,7 +21,7 @@ function AvatarAbout() {
         </Text>
       </Box>
       <Center>Skills</Center> 
-      <Flex flexWrap='wrap' justifyContent='center' bg='green'> 
+      <Flex flexWrap='wrap' justifyContent='center'> 
         <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" h="58" />
         <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" h="58"  /> 
         <Image m='10px' src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" h="58" /> 
