@@ -56,14 +56,6 @@ function App() {
                 github='https://github.com/FacundoAylan/VideoGamerPi' 
                 web='https://video-gamer-pi.vercel.app/'
               />
-              <Cards
-                image='https://i.ibb.co/BT7F5ZZ/weather.png' 
-                name='Country' 
-                description='App donde vas a poder buscar informacion de los paises
-                favoritos.' 
-                github='https://github.com/FacundoAylan/HenryPI' 
-                web=''
-              />
             </Flex>
           </scroll-page>
 
